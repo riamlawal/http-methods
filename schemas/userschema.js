@@ -9,8 +9,20 @@ const userSchema = mongoose.Schema({
   // mongoose.Schema is defining a structure
   name:{
     type:String,  
-    required:false,
+    
   },
+
+  dateofbirth:{
+     type:String,
+     
+  },
+
+  gender:{
+    type:String,
+  
+  },
+
+  
 
   phoneNumber:{
     type:Number,
@@ -19,14 +31,13 @@ const userSchema = mongoose.Schema({
 
   email:{
     type:String,
-    required:true,
     unique:true
   },
 
 
   password:{
     type:String,
-    required:false
+  
   }
 
 },
